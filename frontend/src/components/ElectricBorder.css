@@ -1,0 +1,67 @@
+.electric-border {
+  --electric-border-color: #818cf8;
+  --electric-light-color: #a5b4fc;
+  position: relative;
+  border-radius: inherit;
+  overflow: visible;
+  isolation: isolate;
+  height: 100%;
+}
+
+.eb-canvas-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 2;
+}
+
+.eb-canvas {
+  display: block;
+}
+
+.eb-content {
+  position: relative;
+  border-radius: inherit;
+  z-index: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.eb-layers {
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.eb-glow-1,
+.eb-glow-2,
+.eb-background-glow {
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  box-sizing: border-box;
+}
+
+.eb-glow-1 {
+  border: 2px solid rgba(129, 140, 248, 0.6);
+  filter: blur(1px);
+}
+
+.eb-glow-2 {
+  border: 2px solid rgba(165, 180, 252, 0.8);
+  filter: blur(4px);
+}
+
+.eb-background-glow {
+  z-index: -1;
+  transform: scale(1.05);
+  filter: blur(24px);
+  opacity: 0.35;
+  background: linear-gradient(-30deg, rgba(129, 140, 248, 0.6), transparent, rgba(99, 102, 241, 0.4));
+}

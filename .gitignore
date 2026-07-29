@@ -1,0 +1,30 @@
+# Dependencies
+node_modules/
+frontend/node_modules/
+venv/
+backend/venv/
+.venv/
+backend/.venv/
+
+# Environment variables & local secrets
+*.env
+!*.env.example
+
+# Django & Python
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+*.sqlite3
+backend/db.sqlite3
+
+# Frontend build outputs
+frontend/dist/
+frontend/dist-ssr/
+*.local
+
+# IDE & OS files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

@@ -1,0 +1,30 @@
+.dashboard-page .pie-legend {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 100%;
+  padding-top: 0.5rem;
+}
+.pie-legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+}
+.legend-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+.pie-legend-item .text-muted { margin-left: auto; }
+
+.provider-card { position: relative; overflow: hidden; }
+.provider-services { display: flex; flex-direction: column; gap: 0.35rem; }
+.service-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.25rem 0;
+  border-bottom: 1px solid var(--border-color);
+}
+.service-row:last-child { border-bottom: none; }
