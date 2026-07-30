@@ -2,7 +2,7 @@
   "rewrites": [
     {
       "source": "/api/(.*)",
-      "destination": "https://multicloud-1-ktxg.onrender.com/api/$1"
+      "destination": "https://multicloud-1-dyx0.onrender.com/api/$1"
     },
     {
       "source": "/(.*)",
