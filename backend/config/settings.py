@@ -90,7 +90,7 @@ REST_FRAMEWORK = {
 # CORS
 # ──────────────────────────────────────────────
 FRONTEND_URL = os.getenv('FRONTEND_URL', 'http://localhost:5173')
-CORS_ALLOWED_ORIGINS = [FRONTEND_URL]
+CORS_ALLOW_ALL_ORIGINS = True
 CORS_ALLOW_CREDENTIALS = True
 
 # ──────────────────────────────────────────────
