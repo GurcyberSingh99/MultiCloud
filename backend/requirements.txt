@@ -16,3 +16,4 @@ google-cloud-compute>=1.15
 google-cloud-storage>=2.14
 google-cloud-billing>=1.12
 google-cloud-monitoring>=2.19
+gunicorn>=21.2,<23.0
